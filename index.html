@@ -1,0 +1,245 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Shrinivas Habbu Portfolio  </title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Font Awesome CDN for icons -->
+      <script src="https://kit.fontawesome.com/943bc07f08.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      
+  <!-- ---------- HEADER ---------- -->
+  <div id="header">
+      <div class="container">
+          <nav>
+              <img src="images/logo.png" class="logo" alt="Shrinivas Habbu Logo"> 
+              <!-- Added id="sidemenu" for mobile menu JS -->
+              <ul id="sidemenu"> 
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <!-- Menu close icon -->
+                  <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+              </ul>
+              <!-- Menu open icon -->
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+              <p>Electronics & Communication Engineer</p>
+              <h1>Hi, I'm Shrinivas Habbu<span><br></span> From India</h1>
+          </div>
+      </div>
+  </div>
+
+  <!-- ---------- ABOUT ---------- -->
+  <div id="about">
+      <div class="container">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="images/user.png" alt="Shrinivas profile picture">
+              </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>
+                      Electronics and Communication Engineering graduate specializing in 
+                      embedded systems, IoT, and software testing. Skilled in programming 
+                      (C, Python, Java), firmware development, and tools like MPLAB, Keil, 
+                      Arduino IDE, and Proteus. Experienced through academic projects and 
+                      internships at Emertxe and IBM, where I improved system performance 
+                      and built functional prototypes. Looking to apply problem-solving and 
+                      debugging skills in roles that involve embedded systems, validation, 
+                      and system testing.
+                  </p>
+
+                  <div class="tab-titles">
+                      <!-- 'active-link' class set on the default tab -->
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                      <p class="tab-links" onclick="opentab('experience')">Experience</p> 
+                      <p class="tab-links" onclick="opentab('education')">Education</p> 
+                  </div>
+
+                  <!-- Tab Contents: 'active-tab' class set on the default content -->
+                  <div class="tab-contents active-tab" id="skills">
+                      <ul class="timeline">
+                          <li><span>Programming</span><br>C, Python, Java</li>
+                          <li><span>Embedded Systems</span><br>PIC Microcontrollers, Arduino, NodeMCU, Firmware Development</li>
+                          <li><span>IoT</span><br>Sensor Interfacing, MQTT, Cloud Data Monitoring</li>
+                          <li><span>Tools & IDEs</span><br>MPLAB, Keil, VS Code, Arduino IDE, Proteus, Cadence</li>
+                          <li><span>Soft Skills</span><br>Problem Solving, Teamwork, Adaptability, Communication</li>
+                      </ul>
+                  </div>
+
+                  <div class="tab-contents" id="experience">
+                      <ul class="timeline">
+                          <li><span>Embedded Systems Intern – Emertxe</span><br>Jan 2025 - Feb 2025<br>Developed firmware for a microwave oven simulation using PIC microcontroller; optimized code to reduce response delays by ~20%.</li>
+                          <li><span>Frontend Development Intern – IBM (AICTE Program)</span><br>Jul 2024 - Aug 2024<br>Built a web project using HTML, CSS, and JavaScript; enhanced UI/UX and earned certification for project excellence.</li>
+                          <li><span>Internshala Student Partner (ISP 37)</span><br>2023<br>Promoted internships and training programs on campus; increased student engagement and earned a certificate of appreciation.</li>
+                      </ul>
+                  </div>
+
+                  <div class="tab-contents" id="education">
+                      <ul class="timeline">
+                          <li><span>B.E. in Electronics & Communication Engineering - BLDEAs VP Dr. PG Halakatti College of Engineering & Technology</span><br>2021 - 2025</li>
+                          <li><span>12th - Karnataka Secondary Education Examination Board(PCMB)</span><br>2021</li>
+                          <li><span>10th - Central Board of Secondary Education</span><br>2019</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- ---------- SERVICES ---------- -->
+  <div id="services">
+      <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+              <!-- Service Item 1 -->
+              <div>
+                  <i class="fa-solid fa-microchip"></i>
+                  <h2>Embedded Systems Development</h2>
+                  <p>Design and development of embedded solutions using PIC microcontrollers, Arduino, and NodeMCU. Skilled in firmware programming, debugging, and optimizing real-time performance.</p>
+                  <a href="#">Learn more</a>
+              </div>
+
+              <!-- Service Item 2 -->
+              <div>
+                  <i class="fa-solid fa-heart-pulse"></i>
+                  <h2>IoT & Sensor Integration</h2>
+                  <p>Building IoT-based solutions by integrating sensors, microcontrollers, and cloud platforms. Experienced in MQTT protocols, real-time data monitoring, and connected applications.</p>
+                  <a href="#">Learn more</a>
+              </div>
+
+              <!-- Service Item 3 -->
+              <div>
+                  <i class="fa-brands fa-webflow"></i>
+                  <h2>Web & Development</h2>
+                  <p>Frontend web development using HTML, CSS, and JavaScript. Built functional prototypes with focus on clean design and usability during IBM AICTE internship.</p>
+                  <a href="#">Learn more</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- ---------- PORTFOLIO ---------- -->
+  <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="images/work-1.png" alt="  final year Project">
+                  <div class="layer"> 
+                      <h3>EcoVitals - Patient Monitoring System</h3>
+                      <p>Developed an IoT-based patient monitoring system using DHT11, pulse sensor, and gas sensor on NodeMCU. Real-time data visualization and alert system implemented.</p>
+                      <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/work-2.png" alt="Embedded Project">
+                  <div class="layer">
+                      <h3>Sign Language Detection</h3>
+                      <p>Implemented a gesture recognition system using flex sensors and Raspberry Pi to translate sign language into text, enhancing accessibility for differently-abled users.</p>
+                      <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/work-3.png" alt="IoT System">
+                  <div class="layer">
+                      <h3>Frontend Development Portfolio</h3>
+                      <p>Created responsive and interactive web pages using HTML, CSS, and JavaScript during IBM internship, emphasizing UI/UX and web development best practices.</p>
+                      <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+      </div>
+  </div>
+
+  <!-- ---------- CONTACT ---------- -->
+  <div id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-envelope"></i>shrinivashabbuhabbu@gmail.com</p>
+                  <p><i class="fa-solid fa-phone-volume"></i>+91 7975108545</p>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/shrinivas-habbu/"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://github.com/ShrinivasGH"><i class="fa-brands fa-square-github"></i></a>
+                  </div>
+                  <a href="images/my-cv.pdf" download class="btn btn2"><i class="fa-solid fa-file-pdf"></i>Download CV</a>
+              </div>
+              <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form> 
+                  <span id="msg"></span>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Copyright © Shrinivas Made with by Easy Tutorials   <i class="fa-regular fa-sun"></i></p>
+      </div>
+  </div>
+
+  <!-- ---------- JAVASCRIPT ---------- -->
+  <script>
+      // Tab functionality (Skills, Experience, Education)
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      
+      function opentab (tabname) {
+          // Remove active classes from all links
+          for(tablink of tablinks) {
+              tablink.classList.remove("active-link");
+          }
+          // Remove active classes from all content
+          for(tabcontent of tabcontents) {
+              tabcontent.classList.remove("active-tab");
+          }
+          // Add active class to the clicked link
+          event.currentTarget.classList.add("active-link");
+          // Add active class to the corresponding content div
+          document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // Mobile Menu functionality
+      var sidemeu = document.getElementById("sidemenu");
+      
+      function openmenu() {
+          sidemeu.style.right = "0";
+      }
+      
+      function closemenu(){
+          sidemeu.style.right = "-200px";
+      }
+
+      // Contact Form Submission
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxGrnh2LHixh-VuleOg-OaGE7HPUmwy8fd5QfZn36Ayj7hFzrBJ6qfE8kZ-Kz6lLmcr/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => {
+                  msg.innerHTML = "Message sent successfully"
+                  setTimeout(function(){
+                      msg.innerHTML = ""
+                  }, 5000)
+                  form.reset()
+              })
+              .catch(error => console.error('Error!', error.message))
+      })
+  </script>
+
+  </body>
+  </html>
